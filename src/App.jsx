@@ -11,8 +11,8 @@ export default function App() {
         <h2 className="title">MCS Student</h2>
 
         <div className="links">
-          <a href="#">LinkedIn</a>
-          <a href="#">GitHub</a>
+          <a href="https://www.linkedin.com/in/sanpasht/">LinkedIn</a>
+          <a href="https://github.com/sanpasht">GitHub</a>
           <a href="\SanPashtoonCV.pdf" download="SanPashtoonCV.pdf">
             Download CV
           </a>
