@@ -13,7 +13,7 @@ export default function App() {
         <div className="links">
           <a href="https://www.linkedin.com/in/sanpasht/">LinkedIn</a>
           <a href="https://github.com/sanpasht">GitHub</a>
-          <a href="/SanPashtoonCV.pdf" download="SanPashtoonCV.pdf">
+          <a href="/SanPashtoonCv.pdf" download="SanPashtoonCv.pdf">
             Download CV
           </a>
           <p>sspashto@uci.edu</p>
