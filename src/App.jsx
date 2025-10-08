@@ -13,8 +13,8 @@ export default function App() {
         <div className="links">
           <a href="https://www.linkedin.com/in/sanpasht/">LinkedIn</a>
           <a href="https://github.com/sanpasht">GitHub</a>
-          <a href="/SanPashtoonCv.pdf" download="SanPashtoonCv.pdf">
-            Download CV
+          <a href="https://sanpasht.github.io/san-portfolio/SanPashtoonCv.pdf" target="_blank" rel="noopener noreferrer">
+          View CV
           </a>
           <p>sspashto@uci.edu</p>
         </div>
