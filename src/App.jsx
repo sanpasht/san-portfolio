@@ -47,6 +47,15 @@ export default function App() {
               and OS-level process control.
             </p>
           </div>
+
+          <div className="project">
+            <h3>Brownian Motion Graphing</h3>
+            <p>
+              Designed an interactive Python + OpenGL simulation modeling elastic particle collisions with 
+              momentum conservation, real-time visualization, and data logging for trajectory analysis.
+            </p>
+          </div>
+
           <div className="project">
             <h3>License Plate Recognition System</h3>
             <p>
