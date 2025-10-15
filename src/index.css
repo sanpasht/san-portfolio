@@ -83,3 +83,24 @@ p {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
 }
+
+@media (max-width: 600px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+a {
+  padding: 10px 0;
+  display: inline-block;
+}
