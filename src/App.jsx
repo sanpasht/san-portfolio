@@ -27,7 +27,7 @@ export default function App() {
           <p>
             I'm a software engineer and computer science graduate passionate about
             creating intelligent systems and clean, efficient code. My interests
-            lie at the intersection of data, design, and performance — crafting
+            lie at the intersection of data, design, and performance. My aim is crafting
             tools that are both technically sound and intuitively elegant.
           </p>
         </section>
@@ -35,6 +35,18 @@ export default function App() {
         <section className="projects">
           <h2>Project Blog</h2>
 
+          <div className="project">
+            <h3>Just-in-Time Compiler</h3>
+            <p>
+              Designed and implemented a Just-In-Time (JIT) expression compiler in C. 
+              The system lexically analyzes and parses mathematical input, dynamically generates 
+              equivalent C source code, compiles it into a shared object via fork() and execv(), and 
+              executes it at runtime using dynamic linking (dlopen, dlsym, dlclose). Implemented safe 
+              memory management, error handling, and modular encapsulation across multiple components 
+              (lexer, parser, jitc). Demonstrated practical understanding of compilers, runtime systems, 
+              and OS-level process control.
+            </p>
+          </div>
           <div className="project">
             <h3>License Plate Recognition System</h3>
             <p>
@@ -55,6 +67,7 @@ export default function App() {
               normalization, augmentation) to improve model robustness.
             </p>
           </div>
+
         </section>
       </div>
     </div>
