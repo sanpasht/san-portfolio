@@ -1,0 +1,41 @@
+/* Root container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Desktop layout */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Make left and right columns behave correctly */
+.left {
+  width: 35%;
+  text-align: left;
+}
+
+.right {
+  width: 65%;
+  height: 100vh;
+  overflow-y: auto;
+  text-align: left;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column !important; /* stack vertically */
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+}

@@ -1,0 +1,134 @@
+/* Base page setup */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+}
+
+/* MAIN LAYOUT */
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1200px;
+  margin: 3rem auto;
+  gap: 4rem;
+}
+
+/* LEFT PANEL — NAME + LINKS */
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin: 0.2rem 0;
+}
+
+.links {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.links a:hover {
+  color: #0077ff;
+}
+
+/* RIGHT PANEL — CONTENT + SCROLLING */
+.right {
+  flex: 2;
+  max-height: 90vh;     /* right side scrolls independently */
+  overflow-y: auto;
+  padding-right: 1rem;  /* prevent text cutoff */
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #444;
+}
+
+.project {
+  margin-bottom: 2rem;
+}
+
+.project h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+/* MOBILE LAYOUT — STACKED TOP/BOTTOM */
+@media (max-width: 768px) {
+  
+  .container {
+    flex-direction: column !important;
+    margin: 1.5rem auto;
+    gap: 2rem;
+    width: 92%;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+    max-height: none;      /* disable scroll on mobile */
+    overflow-y: visible;
+    padding-right: 0;
+  }
+
+  .name {
+    font-size: 2.2rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Even smaller screens (older iPhones) */
+@media (max-width: 450px) {
+  .name {
+    font-size: 1.8rem;
+  }
+}
