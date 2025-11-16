@@ -36,6 +36,15 @@ export default function App() {
           <h2>Project Blog</h2>
 
           <div className="project">
+            <h3>Userspace Dynamic Thread Scheduler</h3>
+            <p>
+              Designed and implemented a userspace dynamic thread scheduler that exposes a familiar pthread-style 
+              API for thread creation, joining, synchronization primitives, and thread-local storage while performing 
+              all scheduling and context switching inside userland.
+            </p>
+          </div>
+
+          <div className="project">
             <h3>Just-in-Time Compiler</h3>
             <p>
               Designed and implemented a Just-In-Time (JIT) expression compiler in C. 
